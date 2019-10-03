@@ -48,9 +48,9 @@ public class Interfaccia {
 		ParametriSoluzione p = new ParametriSoluzione();
 		System.out.println("Impostazione dei parametri di ricerca soluzione");
 		System.out.println("Inserire stazione di partenza ");
-		p.setStazionePartenza(scanner.nextLine());
+		p.setStazionePartenza(scanner.nextLine().replaceAll(" ", "%20"));
 		System.out.println("Inserire stazione di arrivo ");
-		p.setStazioneArrivo(scanner.nextLine());
+		p.setStazioneArrivo(scanner.nextLine().replaceAll(" ", "%20"));
 		System.out.println("Inserire data (gg/MM/YYYY) ");
 		p.setData(scanner.nextLine());
 		System.out.println("Inserire orario di partenza (HH:mm) ");

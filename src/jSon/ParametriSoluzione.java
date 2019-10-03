@@ -19,7 +19,7 @@ public class ParametriSoluzione {
 	
 	@Override
 	public String toString() {
-		return  stazionePartenza + "--->" + stazioneArrivo+"\n"+
+		return  stazionePartenza.replaceAll("%20", " ") + "--->" + stazioneArrivo.replaceAll("%20", " ")+"\n"+
 				 data + ", " + ora + "\n adulti= " + adulti + "\n bambini= " + bambini + "\n freccia= "
 				+ freccia + "\n regionali= " + regionali;
 	}
